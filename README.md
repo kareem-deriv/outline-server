@@ -8,7 +8,7 @@ provides an API used by the Outline Manager application.
 
 Go to https://getoutline.org for ready-to-use versions of the software.
 
-## Components
+### Components
 
 The system comprises the following components:
 
@@ -30,7 +30,7 @@ The system comprises the following components:
   See [`src/metrics_server`](src/metrics_server)
 
 
-## Code Prerequisites
+### Code Prerequisites
 
 In order to build and run the code, you need the following installed:
   - [Node](https://nodejs.org/)
@@ -47,7 +47,7 @@ Note: If you are using root (not recommended on your dev machine, maybe in a con
 This project uses [Yarn workspaces](https://yarnpkg.com/blog/2017/08/02/introducing-workspaces/).
 
 
-## Build System
+### Build System
 
 We have a very simple build system based on package.json scripts that are called using `yarn`
 and a thin wrapper for what we call build "actions".
@@ -67,7 +67,7 @@ It also defines two environmental variables:
 - ROOT_DIR: the root directory of the project, as an absolute path.
 - BUILD_DIR: where the build output should go, as an absolute path.
 
-### Build output
+#### Build output
 
 Building creates the following directories under `build/`:
 - `web_app/`: The Manager web app.
